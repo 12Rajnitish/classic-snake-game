@@ -8,7 +8,7 @@ class Food(Turtle):
         self.relocate()  # Position food at a random location
         self.shape('circle')  # Shape of the food
         self.penup()
-        self.shapesize(stretch_wid=0.5, stretch_len=0.5)  # Resize the food
+        self.shapesize(stretch_wid=0.5, stretch_len=0.5)  # Resize the food  0.5*20 , 0.5*20
         self.color('blue')  # Color of the food
         self.speed('fastest')  # Set the food speed to the fastest
 

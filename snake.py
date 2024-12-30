@@ -42,6 +42,13 @@ class Snake:
             self.segments[seg_num].goto(new_x, new_y)
         self.head.fd(MOVE_DISTANCE)  # Move the head forward by the set distance
 
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(1000,1000)
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]
+
     def up(self):
         # Change the direction to UP if not already moving down
         if self.head.heading() != DOWN:
